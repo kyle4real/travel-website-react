@@ -8,7 +8,7 @@
     align-items: center;
     position: fixed;
     width: 100%;
-    background: $dark;
+    background: rgba($dark, 0.85);
     z-index: 1000;
 
     @include breakpoint(md) {
