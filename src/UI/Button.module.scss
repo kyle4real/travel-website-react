@@ -1,0 +1,29 @@
+@import "./../styles/variables.scss";
+
+.button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: $white;
+    border-radius: $borderRadius;
+    padding: $spacing-sm $spacing-lg;
+    font-family: inherit;
+    font-weight: 700;
+    letter-spacing: $letterSpacing;
+    font-size: 1.1rem;
+    color: $aqua;
+    border: 2px solid $aqua;
+
+    &:hover {
+        background: rgba($white, 0.9);
+    }
+
+    &.outline {
+        background: rgba($aqua, 0.2);
+        color: white;
+
+        &:hover {
+            background: rgba($aqua, 0.1);
+        }
+    }
+}

@@ -3,6 +3,7 @@
 .container {
     position: relative;
     max-width: 1920px;
+    height: 100vh;
 }
 
 .video {
@@ -10,15 +11,61 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
 }
 
-.overlay {
+.hero {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background: rgba($dark, 0.2);
+    height: 100%;
+    background: rgba($dark, 0.3);
+    padding-top: $headerHeight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        background: rgba($dark, 0.5);
+        padding: $spacing-lg;
+        border-radius: $borderRadius;
+        text-align: center;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: $letterSpacing;
+        text-transform: uppercase;
+
+        &__title {
+            font-size: 3.8rem;
+            color: $white;
+            font-weight: 900;
+            margin-bottom: $spacing-sm;
+        }
+
+        &__tagline {
+            font-size: 2rem;
+            font-weight: 900;
+            color: $light;
+            font-style: italic;
+            margin-bottom: $spacing-md;
+        }
+
+        &__description {
+            color: white;
+            margin: 0 auto;
+            width: 60%;
+            font-size: 1.1rem;
+            margin-bottom: $spacing-lg;
+            line-height: 20px;
+        }
+
+        &__cta {
+            button:not(:last-child) {
+                margin-right: $spacing-sm;
+            }
+        }
+    }
 }
