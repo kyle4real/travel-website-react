@@ -7,6 +7,7 @@ const Header = () => {
         <div className={classes.header}>
             <div className={classes.header__logo}>
                 <LeafSVG fillColor={"white"} />
+                <span>Tropic</span>
             </div>
         </div>
     );
