@@ -4,7 +4,11 @@ import classes from "./Button.module.scss";
 
 const Button = ({ children, outline, className }) => {
     return (
-        <button className={`${classes.button} ${outline ? classes.outline : ""} ${className}`}>
+        <button
+            className={`${classes.button} ${outline ? classes.outline : ""} ${
+                className ? className : ""
+            }`}
+        >
             {children}
         </button>
     );

@@ -2,13 +2,14 @@
 
 .container {
     position: relative;
-    max-width: 1920px;
+    // max-width: 1920px;
     height: 100vh;
     min-height: 800px;
+    margin: 0 auto;
 }
 
 .video {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,7 +31,7 @@
 
     &__content {
         margin: 0 1.5rem;
-        background: rgba($dark, 0.5);
+        background: rgba($dark, 0.6);
         backdrop-filter: blur(2px);
         padding: $spacing-lg;
         border-radius: $borderRadius;
@@ -77,6 +78,7 @@
         }
 
         &__description {
+            text-transform: capitalize;
             color: $light;
             width: 100%;
             font-size: 1rem;
@@ -107,12 +109,14 @@
             }
 
             @include breakpoint(md) {
+                align-items: center;
                 button {
                     width: auto;
                 }
                 margin: 0 auto;
                 flex-direction: row;
                 button:not(:last-child) {
+                    margin-bottom: 0;
                     margin-right: $spacing-sm;
                 }
             }

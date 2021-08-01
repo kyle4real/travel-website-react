@@ -1,9 +1,9 @@
-import React, { Fragment, useEffect } from "react";
+import React from "react";
 
 import classes from "./Hero.module.scss";
 
 import coverVID from "./../../assets/cover.mp4";
-import Button from "../../UI/Button";
+import Button from "../../UI/Button/Button";
 
 const Hero = () => {
     return (
