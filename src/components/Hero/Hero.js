@@ -27,7 +27,7 @@ const Hero = () => {
                         dicta expedita sunt, tempore recusandae officiis.
                     </p>
                     <div className={classes.hero__content__cta}>
-                        <Button>Book Today</Button>
+                        <Button>Book Now</Button>
                         <Button outline>Learn More</Button>
                     </div>
                 </div>

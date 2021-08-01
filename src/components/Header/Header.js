@@ -38,7 +38,7 @@ const Header = () => {
             <div className={classes.header__menu}>
                 <div className={classes.header__menu__toggle}>{menuToggle}</div>
                 <aside className={`${classes.menu} ${menuOpen && classes.show}`}>
-                    <Nav isMenu />
+                    <Nav isMenu menuToggle={handleMenuToggle} />
                 </aside>
             </div>
         </div>

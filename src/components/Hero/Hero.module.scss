@@ -4,6 +4,7 @@
     position: relative;
     max-width: 1920px;
     height: 100vh;
+    min-height: 800px;
 }
 
 .video {
@@ -28,43 +29,92 @@
     justify-content: center;
 
     &__content {
+        margin: 0 1.5rem;
         background: rgba($dark, 0.5);
+        backdrop-filter: blur(2px);
         padding: $spacing-lg;
         border-radius: $borderRadius;
-        text-align: center;
+        text-align: left;
         width: 1000px;
         display: flex;
         flex-direction: column;
         letter-spacing: $letterSpacing;
         text-transform: uppercase;
 
+        @include breakpoint(md) {
+            text-align: center;
+        }
+
         &__title {
-            font-size: 3.8rem;
+            font-size: 2.4rem;
             color: $white;
             font-weight: 900;
             margin-bottom: $spacing-sm;
+
+            @include breakpoint(sm) {
+                font-size: 3rem;
+            }
+
+            @include breakpoint(md) {
+                font-size: 3.8rem;
+            }
         }
 
         &__tagline {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 900;
             color: $light;
             font-style: italic;
             margin-bottom: $spacing-md;
+
+            @include breakpoint(sm) {
+                font-size: 1.8rem;
+            }
+
+            @include breakpoint(md) {
+                font-size: 2rem;
+            }
         }
 
         &__description {
-            color: white;
-            margin: 0 auto;
-            width: 60%;
-            font-size: 1.1rem;
+            color: $light;
+            width: 100%;
+            font-size: 1rem;
             margin-bottom: $spacing-lg;
             line-height: 20px;
+
+            @include breakpoint(sm) {
+                width: 80%;
+                font-size: 1.1rem;
+            }
+
+            @include breakpoint(md) {
+                margin: 0 auto;
+                margin-bottom: $spacing-lg;
+                width: 60%;
+            }
         }
 
         &__cta {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            button {
+                width: 100%;
+            }
             button:not(:last-child) {
-                margin-right: $spacing-sm;
+                margin-bottom: $spacing-sm;
+            }
+
+            @include breakpoint(md) {
+                button {
+                    width: auto;
+                }
+                margin: 0 auto;
+                flex-direction: row;
+                button:not(:last-child) {
+                    margin-right: $spacing-sm;
+                }
             }
         }
     }

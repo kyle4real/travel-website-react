@@ -4,26 +4,28 @@
     cursor: pointer;
     border: none;
     outline: none;
-    background: $white;
     border-radius: $borderRadius;
     padding: $spacing-sm $spacing-lg;
     font-family: inherit;
     font-weight: 700;
     letter-spacing: $letterSpacing;
     font-size: 1.1rem;
-    color: $aqua;
-    border: 2px solid $aqua;
+    background: $light;
+    color: $dark;
+    border: 1px solid $dark2;
+    transition: all 0.3s ease;
 
     &:hover {
-        background: rgba($white, 0.9);
+        background: rgba($light, 0.8);
     }
 
     &.outline {
-        background: rgba($aqua, 0.2);
-        color: white;
+        border: 1px solid $light;
+        background: rgba($aqua, 0);
+        color: $light;
 
         &:hover {
-            background: rgba($aqua, 0.1);
+            background: rgba($light, 0.2);
         }
     }
 }

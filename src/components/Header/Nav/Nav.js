@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../../UI/Button";
 
 import classes from "./Nav.module.scss";
 
@@ -7,21 +8,18 @@ const Nav = ({ isMenu, menuToggle }) => {
         <nav className={isMenu ? classes.menu__nav : classes.nav}>
             <ul>
                 <li>
-                    <a href="#about" onClick={menuToggle}>
-                        About
+                    <a href="#learnmore" onClick={menuToggle}>
+                        Learn More
                     </a>
                 </li>
                 <li onClick={menuToggle}>
-                    <a href="#projects">Projects</a>
+                    <a href="#locations">Locations</a>
                 </li>
                 <li onClick={menuToggle}>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li onClick={menuToggle}>
-                    <a href="#blog">Blog</a>
+                    <a href="#pricing">Pricing</a>
                 </li>
             </ul>
-            {/* <Button className={classes["nav__resume"]}>Resume</Button> */}
+            <Button className={classes.booknow}>Book Now</Button>
         </nav>
     );
 };
