@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./Locations.module.scss";
 import { BsArrowRight } from "react-icons/bs";
@@ -63,10 +64,10 @@ const Locations = ({ page }) => {
                     </div>
                     {!page && (
                         <div className={classes.locations__content__viewmore}>
-                            <a href="/">
+                            <Link to="/locations">
                                 view more
                                 <BsArrowRight />
-                            </a>
+                            </Link>
                         </div>
                     )}
                 </div>
