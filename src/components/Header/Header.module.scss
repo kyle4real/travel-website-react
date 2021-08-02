@@ -17,19 +17,6 @@
         padding: 0 3rem;
     }
 
-    &__logo {
-        display: flex;
-        align-items: center;
-
-        span {
-            font-size: 2rem;
-            color: $white;
-            font-weight: 900;
-            letter-spacing: $letterSpacing;
-            margin-left: $spacing-sm;
-        }
-    }
-
     &__menu {
         @include breakpoint(md) {
             display: none;

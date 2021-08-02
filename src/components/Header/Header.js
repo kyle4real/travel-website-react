@@ -6,6 +6,7 @@ import { CgMenuRight, CgClose } from "react-icons/cg";
 import LeafSVG from "../../assets/LeafSVG.js";
 import Nav from "./Nav/Nav";
 import useWindowSize from "../../hooks/useWindowSize";
+import Logo from "../../UI/Logo/Logo";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -29,11 +30,8 @@ const Header = () => {
     );
 
     return (
-        <div className={classes.header}>
-            <div className={classes.header__logo}>
-                <LeafSVG fillColor={"white"} />
-                <span>Tropic</span>
-            </div>
+        <header className={classes.header}>
+            <Logo />
             <Nav />
             <div className={classes.header__menu}>
                 <div className={classes.header__menu__toggle}>{menuToggle}</div>
@@ -41,7 +39,7 @@ const Header = () => {
                     <Nav isMenu menuToggle={handleMenuToggle} />
                 </aside>
             </div>
-        </div>
+        </header>
     );
 };
 
