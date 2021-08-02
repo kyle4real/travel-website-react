@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <Fragment>
             <Hero />
-            <Locations />
+            <Locations page={false} />
         </Fragment>
     );
 };
