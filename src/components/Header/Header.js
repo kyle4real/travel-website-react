@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import classes from "./Header.module.scss";
 
 import { CgMenuRight, CgClose } from "react-icons/cg";
-import LeafSVG from "../../assets/LeafSVG.js";
 import Nav from "./Nav/Nav";
 import useWindowSize from "../../hooks/useWindowSize";
 import Logo from "../../UI/Logo/Logo";

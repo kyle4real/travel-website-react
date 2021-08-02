@@ -5,10 +5,10 @@ import classes from "./Logo.module.scss";
 
 const Logo = () => {
     return (
-        <div className={classes.logo}>
+        <a href="/" className={classes.logo}>
             <LeafSVG fillColor={"white"} />
             <span>Tropic</span>
-        </div>
+        </a>
     );
 };
 
