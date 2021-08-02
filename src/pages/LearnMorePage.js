@@ -2,9 +2,9 @@ import React from "react";
 import Hero from "../components/Hero/Hero";
 import useScrollToTop from "../hooks/useScrollToTop";
 
-const PricingPage = () => {
+const LearnMorePage = () => {
     useScrollToTop();
-    return <Hero isDynamic={true}>Pricing</Hero>;
+    return <Hero isDynamic={true}>Learn More</Hero>;
 };
 
-export default PricingPage;
+export default LearnMorePage;

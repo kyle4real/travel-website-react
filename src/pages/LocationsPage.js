@@ -1,14 +1,10 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React from "react";
 
 import Locations from "../components/Locations/Locations";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const LocationsPage = () => {
-    const { pathname } = useLocation();
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
+    useScrollToTop();
     return <Locations page={true} />;
 };
 
