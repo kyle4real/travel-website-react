@@ -5,7 +5,7 @@ import Locations from "../components/Locations/Locations";
 const Home = () => {
     return (
         <Fragment>
-            <Hero />
+            <Hero isDynamic={false} />
             <Locations page={false} />
         </Fragment>
     );

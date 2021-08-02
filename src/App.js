@@ -5,12 +5,16 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import LocationsPage from "./pages/LocationsPage";
+import PricingPage from "./pages/PricingPage";
 
 function App() {
     return (
         <Fragment>
             <Header />
             <Switch>
+                <Route path="/pricing">
+                    <PricingPage />
+                </Route>
                 <Route path="/locations">
                     <LocationsPage />
                 </Route>
